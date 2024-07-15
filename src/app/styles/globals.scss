@@ -1,0 +1,44 @@
+@import "./mixins";
+@import "./variables";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/loan_hub_frontend/public/assets/Fonts/Poppins-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url('/loan_hub_frontend/public/assets/Fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+//   // font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'ModernAntiqua';
+  src: url('/rogue_dev//public/fonts/mont/ModernAntiqua-Regular.ttf') format('ttf'),
+       url('/rogue_dev/public/fonts/mont/ModernAntiqua-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Poppins', Poppins;
+  font-family: 'ModernAntiqua';
+  // font-family: 'Roboto', Roboto;
+}
+
+
+
