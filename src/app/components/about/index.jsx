@@ -7,6 +7,7 @@ import kids from "../../../../public/assets/images/kids.svg"
 import man from "../../../../public/assets/images/man.svg"
 import yellow from "../../../../public/assets/images/yellow.svg"
 
+
 export default function About() {
   return (
     <div className={styles.hero_container}>

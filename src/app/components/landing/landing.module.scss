@@ -105,12 +105,12 @@
         display: block;
         color: #fff;
         width: 100%;
-    background-image: url("../../../../public/assets/images/unsplash_498UjzgcwA0.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+        background-image: url("../../../../public/assets/images/unsplash_498UjzgcwA0.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
 
     .background_overlay{
         position: absolute;
@@ -546,10 +546,12 @@
 
     .box_container{
         width: 100%;
+        overflow: auto;
 
         .box_img{
             width: 100% !important;
-            height: unset !important;
+            height: auto;
+            // height: unset !important;
         }
     }
 
