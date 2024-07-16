@@ -10,7 +10,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
+    height: 1088px;
     position: relative;
 
     .background_overlay{
@@ -29,34 +30,36 @@
             flex-direction: column;
             justify-content: center;
             gap: 10px;
-            padding: 200px 0px 120px;
+            padding: 300px 0px 120px;
 
             h1{
                 font-family: Work Sans;
-                font-size: 55.68px;
+                font-size: 65.68px;
                 font-weight: 600;
-                line-height: 55.38px;
+                line-height: 60.38px;
                 letter-spacing: -0.04em;
                 text-align: left;
                 color: #fff;
-                width: 35%;
+                width: 45%;
             }
 
             p{
                 font-family: Work Sans;
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 500;
-                line-height: 15px;
+                line-height: 20px;
                 letter-spacing: -0.02em;
                 text-align: left;
                 color: #EBEBEB;
-                width: 25%;
+                width: 30%;
+                margin-top: 20px;
             }
 
             .hero_buttons{
                 display: flex;
                 align-items: center;
                 gap: 2px ;
+                margin-top: 20px;
 
                 .hero_btn1{
                     font-family: Work Sans;
@@ -69,7 +72,7 @@
                     background: #DA6F51;
                     border: none;
                     border-radius: 20px;
-                    padding: 6px 20px;
+                    padding: 10px 30px;
                     cursor: pointer;
 
                     &:hover{
@@ -87,7 +90,7 @@
                     color: #fff;
                     background: transparent;
                     border-radius: 20px;
-                    padding: 6px 20px;
+                    padding: 10px 30px;
                     cursor: pointer;
                     border: 1px solid transparent;
 
@@ -237,9 +240,9 @@
         width: 50%;
 
         b{
-            font-family: Work Sans;
+            font-family: Workbold;
             font-size: 15px;
-            font-weight: bolder;
+            font-weight: 900;
             line-height: 28px;
             letter-spacing: 4px;
             text-align: left;
@@ -247,7 +250,7 @@
         }
 
         h3{
-            font-family: Work Sans;
+            font-family: Workbold;
             font-size: 40px;
             font-weight: 600;
             letter-spacing: -0.04em;
@@ -258,7 +261,7 @@
 
         p{
             font-family: Work Sans;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 20px;
             text-align: justified;
@@ -306,7 +309,7 @@
 
                 p{
                     font-family: Work Sans;
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: 400;
                     line-height: 24.13px;
                     text-align: center;
@@ -325,7 +328,7 @@
             width: 100%;
     
             b{
-                font-family: Work Sans;
+                font-family: Workbold;
                 font-size: 13px;
                 font-weight: bolder;
                 line-height: 28px;
@@ -335,7 +338,7 @@
             }
     
             h3{
-                font-family: Work Sans;
+                font-family: Workbold;
                 font-size: 25px;
                 font-weight: 600;
                 letter-spacing: -0.04em;
@@ -346,7 +349,7 @@
     
             p{
                 font-family: Work Sans;
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 400;
                 line-height: 20px;
                 text-align: justified;
@@ -427,7 +430,7 @@
         padding: 0px 120px 0px 0px;
 
         h3{
-            font-family: Work Sans;
+            font-family: Workbold;
             font-size: 40px;
             font-weight: 600;
             line-height: 53px;
@@ -439,7 +442,7 @@
 
         p{
             font-family: Work Sans;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 24px;
             text-align: justified;
@@ -450,7 +453,7 @@
 
         small{
             font-family: Work Sans;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 18.77px;
             text-align: left;
@@ -481,7 +484,7 @@
             padding: 0px 0px 0px 0px;
     
             h3{
-                font-family: Work Sans;
+                font-family: Workbold;
                 font-size: 30px;
                 font-weight: 600;
                 line-height: 33px;
@@ -525,7 +528,7 @@
     padding: 100px 0px 0px;
 
     h2{
-        font-family: Work Sans;
+        font-family: Workbold;
         font-size: 40px;
         font-weight: 600;
         line-height: 53px;
@@ -536,7 +539,7 @@
 
     p{
         font-family: Work Sans;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         line-height: 24px;
         text-align: center;
@@ -560,7 +563,7 @@
         padding: 50px 0px 0px;
     
         h2{
-            font-family: Work Sans;
+            font-family: Workbold;
             font-size: 30px;
             font-weight: 600;
             line-height: 33px;
@@ -569,7 +572,7 @@
     
         p{
             font-family: Work Sans;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 400;
             line-height: 24px;
             text-align: center;
@@ -593,7 +596,7 @@
     margin-top: 100px;
 
         h2{
-            font-family: Work Sans;
+            font-family: Workbold;
             font-size: 40px;
             font-weight: 600;
             line-height: 53px;
@@ -607,7 +610,7 @@
             margin-bottom: 50px;
 
             h2{
-                font-family: Work Sans;
+                font-family: Workbold;
                 font-size: 25px;
                 font-weight: 600;
                 line-height: 53px;

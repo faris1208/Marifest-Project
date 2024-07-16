@@ -8,6 +8,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: Work Sans;
+  src: url("../../../public/assets/fonts/work/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: Workbold;
+  src: url("../../../public/assets/fonts/work/WorkSans-Bold.ttf");
+}
+
 // @font-face {
 //   font-family: 'Roboto';
 //   src: url('/loan_hub_frontend/public/assets/Fonts/Roboto/Roboto-Bold.ttf') format('truetype');
