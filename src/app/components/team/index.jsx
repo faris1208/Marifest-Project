@@ -4,6 +4,7 @@ import { founding, board } from "../data/index"
 import Image from 'next/image'
 import second from "../../../../public/assets/images/second.svg"
 import NavBar from '../navbar'
+import Contacts from '../resuseable'
 
 export default function Team() {
   return (
@@ -17,24 +18,28 @@ export default function Team() {
 
       <div className={styles.founding_container}>
         <section className={styles.founding_team}>
-          <b>TEAM MARITEST</b>
-          <h2>Founding Team</h2>
-          <div className={styles.logo_img}>
-              {founding.map((item, i) => (
-                <div
-                  key={i}
-                  className={styles.logo_icon}
-                >
-                  <Image 
-                  src={item.icon}
-                  alt='logos'
-                  width={100}
-                  className={styles.logo}
-                  />
-                  <b>{item.name}</b>
-                  <p>{item.text}</p>
-                </div>
-              ))}
+          <div className={styles.team}>
+            <b>TEAM MARITEST</b>
+            <h2>Founding Team</h2>
+          </div>
+          <div className={styles.team_two}>
+            <div className={styles.logo_img}>
+                {founding.map((item, i) => (
+                  <div
+                    key={i}
+                    className={styles.logo_icon}
+                  >
+                    <Image 
+                    src={item.icon}
+                    alt='logos'
+                    width={100}
+                    className={styles.logo}
+                    />
+                    <b>{item.name}</b>
+                    <p>{item.text}</p>
+                  </div>
+                ))}
+              </div>
             </div>
         </section>
 
@@ -69,31 +74,7 @@ export default function Team() {
             </div>
         </section>
       </div>
-      <section className={styles.contact}>
-        <div className={styles.contact_overlay}></div>
-        <div className={styles.contact_overlay_two}>
-          <div className={styles.contact_us_wrapper}>
-            <div className={styles.contact_us_wrapper_two}>
-              <div className={styles.contact_us_text}>
-                <h2>Support</h2>
-                <h2>Partner</h2>
-                <h2>Join</h2>
-                <h2><span>Contact Us</span></h2>
-              </div>
-              <form action=""  className={styles.contact_us_form}>
-                <div className={styles.contact_us_form_input}>
-                  <input type="text" placeholder='Name' />
-                  <input type="email" placeholder='Email' />
-                </div>
-                <div  className={styles.contact_us_form_two_input}>
-                  <input type="text" placeholder='Leave a message' className={styles.last_input} />
-                  <input type="button" value="Contact Us" className={styles.contact_btn}  />
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Contacts />
     </div>
   )
 }
