@@ -8,6 +8,8 @@ import cool from "../../../../public/assets/images/Element.svg"
 import group from "../../../../public/assets/images/home.svg"
 import { logo } from "../data/index"
 import Contacts from '../resuseable'
+import left from "../../../../public/assets/images/Element.svg"
+import right from "../../../../public/assets/images/yellow.svg"
 
 export default function Landing() {
   return (
@@ -15,7 +17,6 @@ export default function Landing() {
       <Navbar />
       <div className={styles.background_image}>
         <div className={styles.background_overlay}>
-          
           <div className={styles.hero_wrapper}>
             <h1>A Future Without Malaria</h1>
             <p>Innovative, bloodless, automated, and rapid diagnosis and prescription for a healthier tomorrow</p>
@@ -80,16 +81,34 @@ export default function Landing() {
             <small>Source: Malaria Journal</small>
           </div>
         </div>
+        <div className={styles.side_conatiner}>
+          <Image 
+          src={left}
+          alt='left'
+          width={130}
+          className={styles.side_left}
+          />
+          <Image 
+          src={right}
+          alt='left'
+          width={130}
+          className={styles.side_right}
+          />
+        </div>
         <div className={styles.journey_container}>
-          <h2>Our Journey</h2>
-          <p>A timeline of MariTest’s development, highlighting the dedication and milestones reached.</p>
-          <div className={styles.box_container}>
-            <Image 
-            src={group}
-            alt='group'
-            width={1500}
-            className={styles.box_img}
-            />
+          <div className={styles.journey_text}>
+            <h2>Our Journey</h2>
+            <p>A timeline of MariTest’s development, highlighting the dedication and milestones reached.</p>
+          </div>
+          <div className={styles.box_wrapper}>
+            <div className={styles.box_container}>
+              <Image 
+              src={group}
+              alt='group'
+              width={1500}
+              className={styles.box_img}
+              />
+            </div>
           </div>
         </div>
         <div className={styles.sponsor_container}>
