@@ -35,7 +35,7 @@ export default function Footer() {
             <Image 
             src={line}
             alt='line'
-            width={1160}
+            width={800}
             className={styles.line_img}
             />
           </div>

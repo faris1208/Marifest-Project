@@ -5,12 +5,13 @@ import NavBar from '../navbar'
 export default function Contact() {
   return (
     <div className={styles.hero_container}>
+      <NavBar />
         <section className={styles.contact}>
         <div className={styles.contact_overlay}></div>
         <div className={styles.contact_overlay_two}>
           
           <div className={styles.contact_us_wrapper}>
-          <NavBar />
+          
             <div className={styles.contact_us_wrapper_two}>
               <div className={styles.contact_us_text}>
                 <h2>Get in touch</h2>

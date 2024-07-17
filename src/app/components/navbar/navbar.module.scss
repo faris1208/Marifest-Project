@@ -2,12 +2,26 @@
 
 
 .navbar {
-  background: #FFFFFF33;
-padding: 20px 100px 20px 60px;
+  background: #05050533;
+  padding: 40px 100px 40px 60px;
   text-align: center;
   @include flex(0);
+  position: sticky;
+  top: 0;
+  z-index: 999;
   width: 100%;
-  border-radius: 100px;
+  // border-radius: 100px;
+
+  @include responsive("tablet"){
+    padding: 30px 40px 30px 40px;
+    text-align: center;
+    @include flex(0);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+
+  }
 
   @include responsive("mobile"){
     .logo_image{
@@ -31,7 +45,7 @@ padding: 20px 100px 20px 60px;
   
 
   @include responsive("mobile") {
-    background: #FFFFFF33;
+    background: #05050533;
     padding:15px 20px;
     text-align: center;
     @include flex(0);

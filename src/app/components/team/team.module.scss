@@ -2,6 +2,11 @@
 
 .hero_container{
     width: 100%;
+
+    @include responsive("tablet") {
+        max-width: 1023px;
+        margin: 0 auto;
+    }
 }
 
 .background_image{
@@ -29,6 +34,10 @@
         align-items: center;
     }
 
+    @include responsive("tablet"){
+        display: none;
+    }
+
     @include responsive("mobile") {
         width: 100%;
         background-image: url("../../../../public/assets/images/background.svg");
@@ -38,6 +47,7 @@
         height: 150px;
         position: relative;
         padding: 0px 0px 0px;
+        display: none;
     
         .background_overlay{
             position: absolute;
@@ -60,6 +70,10 @@
     width: 100%;
     background-color: #FFFAF4;
     padding: 60px 0px 200px;
+
+    @include responsive("tablet") {
+        padding: 60px 0px 50px;
+    }
 
     @include responsive("mobile") {
         padding: 60px 0px 50px;
@@ -208,6 +222,10 @@
     align-items: center;
     margin: 70px 0px;
 
+    @include responsive("tablet"){
+        display: none;
+    }
+
     @include responsive("mobile") {
         display: none;
     }
@@ -277,6 +295,76 @@
                 line-height: 24px;
                 text-align: center;
                 color: #17154C;
+            }
+        }
+    }
+
+    @include responsive("tablet"){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px;
+        margin-top: 80px;
+    
+        b{
+            font-family:Workbold;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 4px;
+            text-align: center;
+            color: #17154C;
+        }
+    
+        h2{
+            font-family: Workbold;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 53px;
+            letter-spacing: -0.04em;
+            text-align: center;
+            color: #F46036;
+        }
+    
+        .logo_img{
+            display: flex;
+            gap: 20px;
+            // align-items: center;
+            // justify-content: center;
+            margin-top: 40px;
+    
+            .logo_icon{
+                display: flex;
+                flex-direction: column;
+                // justify-content: center;
+                // align-items: center;
+                width: 25%;
+    
+                .logo{
+                    width: 100% !important;
+                    height: unset !important;
+                    margin-bottom: 10px;
+                }
+    
+                b{
+                    font-family: Workbold;
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #17154C;
+                    letter-spacing: 0px;
+                }
+    
+                p{
+                    font-family: Work Sans;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #17154C;
+                }
             }
         }
     }
@@ -487,9 +575,147 @@
 
     }
 
+    @include responsive("tablet") {
+        width: 100%;
+        height: 400px;
+        // height: 500px;
+        position: relative;
+        padding: 0px 0px 200x;
+        background-color: rgb(19, 46, 61,);
+        // background-color: rgba(2, 27, 41, 0.9);
+        z-index: 1;
+        color: rgb(72, 93, 104);
+    
+        .contact_overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 50px 40px;
+            background-image: url("../../../../public/assets/images/image\ 405.svg");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .contact_overlay_two{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(72, 93, 104, 0.9); 
+            z-index: 1;
+            color: rgb(72, 93, 104);
+            // padding: 0px 120px;
+    
+    
+            .contact_us_wrapper{
+                position: absolute;
+                bottom: 0;
+                // left: 0;
+                width: 100%;
+                padding: 0px 40px;
+    
+                .contact_us_wrapper_two{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 40px 40px;
+                    border-radius: 50px 50px 0px 0px;
+                    background: #FFFFFF33;
+    
+                    .contact_us_text{
+                        width: 50%;
+    
+                        h2{
+                            font-family: Work Sans;
+                            font-size: 35px;
+                            font-weight: 600;
+                            // line-height: 53px;
+                            letter-spacing: -0.04em;
+                            text-align: left;
+                            color: #fff;
+    
+                            span{
+                                color: #fff;
+                            }
+                        }
+                    }
+    
+                    .contact_us_form{
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+    
+                        .contact_us_form_input{
+                            display: flex;
+                            gap: 30px;
+    
+                            input{
+                                width: 48%;
+                                background-color: #FFFFFF33;
+                                // background: transparent;
+                                border-radius: 30px;
+                                padding: 10px 20px;
+                                border: 1px solid #BDBEC4;
+                                color: #fff;
+    
+                                &::placeholder{
+                                    color: #fff;
+                                }
+                            }
+                        }
+    
+                        .contact_us_form_two_input{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+    
+                            .last_input{
+                                padding: 40px 20px ;
+                                width: 100%;
+                                border-radius: 30px;
+                                border: 1px solid #BDBEC4;
+                                background-color: #FFFFFF33;
+                                color: #fff;
+    
+                                &::placeholder{
+                                    color: #fff;
+                                }
+                            }
+    
+                            .contact_btn{
+                                width: 100%;
+                                padding: 10px 20px;
+                                background-color: #fff;
+                                font-family: Work Sans;
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 24px;
+                                letter-spacing: -0.02em;
+                                text-align: center;
+                                color: #132E3D;
+                                border-radius: 30px ;
+                                border: none;
+                                cursor: pointer;
+    
+                                &:hover{
+                                    background-color: #e6e4e4;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+
     @include responsive("mobile") {
         width: 100%;
-        height: 450px;
+        height: 550px;
         // height: 500px;
         position: relative;
         padding: 0px 0px 200x;
@@ -548,7 +774,7 @@
                             // line-height: 53px;
                             letter-spacing: -0.04em;
                             text-align: left;
-                            color: #A2ABB47A;
+                            color: #fff;
     
                             span{
                                 font-size: 20px;
@@ -568,7 +794,7 @@
                             gap: 30px;
     
                             input{
-                                width: 40%;
+                                width: 48%;
                                 background-color: #FFFFFF33;
                                 // background: transparent;
                                 border-radius: 30px;

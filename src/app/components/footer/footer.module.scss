@@ -4,6 +4,10 @@
     padding: 20px 120px;
     background-color: #132E3D;
 
+    @include responsive("tablet"){
+        padding: 20px 40px;
+    }
+
     @include responsive("mobile") {
         padding: 20px 20px;
     }
@@ -59,6 +63,11 @@
         display: none;
         color: #fff;
       }
+
+      @include responsive("tablet") {
+        display: none;
+        color: #fff;
+      }
 }
 
 .footer_last{
@@ -91,6 +100,40 @@
             text-align: left;
             color: #8C929E;
         }
+    }
+
+    @include responsive("tablet"){
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px;
+
+    p{
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -0.41999998688697815px;
+        text-align: left;
+        color: #8C929E;
+    }
+
+    .privacy{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p{
+            font-family: Inter;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: -0.41999998688697815px;
+            text-align: left;
+            color: #8C929E;
+        }
+    }
     }
 
     @include responsive("mobile") {

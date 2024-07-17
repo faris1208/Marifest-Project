@@ -11,9 +11,9 @@ import yellow from "../../../../public/assets/images/yellow.svg"
 export default function About() {
   return (
     <div className={styles.hero_container}>
+      <NavBar />
       <div className={styles.background_image}>
         <div className={styles.background_overlay}>
-          <NavBar />
           <div className={styles.hero_wrapper}>
             <div className={styles.marifest_heading}>
               <b>ABOUT MARITEST</b>

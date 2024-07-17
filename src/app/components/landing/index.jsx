@@ -11,9 +11,10 @@ import { logo } from "../data/index"
 export default function Landing() {
   return (
     <div className={styles.hero_container}>
+      <Navbar />
       <div className={styles.background_image}>
         <div className={styles.background_overlay}>
-          <Navbar />
+          
           <div className={styles.hero_wrapper}>
             <h1>A Future Without Malaria</h1>
             <p>Innovative, bloodless, automated, and rapid diagnosis and prescription for a healthier tomorrow</p>
@@ -85,7 +86,7 @@ export default function Landing() {
             <Image 
             src={group}
             alt='group'
-            width={1000}
+            width={1500}
             className={styles.box_img}
             />
           </div>
