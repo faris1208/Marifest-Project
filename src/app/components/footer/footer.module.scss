@@ -3,6 +3,8 @@
 .footer_container{
     padding: 20px 120px;
     background-color: #132E3D;
+    max-width: 1440px;
+    margin: 0 auto;
 
     @include responsive("tablet"){
         padding: 20px 40px;
