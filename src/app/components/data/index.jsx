@@ -3,10 +3,10 @@ import modern from "../../../../public/assets/images/image 415.svg"
 import responsive from "../../../../public/assets/images/africa.svg"
 import content from "../../../../public/assets/images/image 412 (1).svg"
 import security from "../../../../public/assets/images/image 414.svg"
-import linkedin from "../../../../public/assets/images/footer-linkedin.svg.svg"
-import instagram from "../../../../public/assets/images/footer-instagram.svg.svg"
-import mail from "../../../../public/assets/images/footer-mail.svg.svg"
-import twitter from "../../../../public/assets/images/footer-twitter.svg.svg"
+import ink from "../../../../public/assets/images/din.svg"
+import instagram from "../../../../public/assets/images/gram.svg"
+import mail from "../../../../public/assets/images/ail.svg"
+import twitter from "../../../../public/assets/images/ter.svg"
 import hakeem from "../../../../public/assets/images/hakeem.svg"
 import stanley from "../../../../public/assets/images/stanley.svg"
 import delight from "../../../../public/assets/images/delight.svg"
@@ -38,7 +38,7 @@ export const logo = [
 
 export const facebook = [
     {
-        icon: linkedin,
+        icon: ink,
     },
     {
         icon: instagram,

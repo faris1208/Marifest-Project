@@ -48,18 +48,23 @@
                 justify-content: space-between;
                 padding: 40px 120px;
                 border-radius: 50px 50px 0px 0px;
-                background: #FFFFFF33;
+                background: rgba(255, 255, 255, 0.1);
+                // background: rgba(250, 239, 239, 0.1);
 
                 .contact_us_text{
+                    margin: 2px solid red;
+                    width: 50%;
 
                     h2{
                         font-family: Work Sans;
-                        font-size: 40px;
+                        font-size: 35px;
                         font-weight: 600;
                         // line-height: 53px;
                         letter-spacing: -0.04em;
                         text-align: left;
-                        color: #A2ABB47A;
+                        color: #a4adb67a;
+                        // background: #A2ABB47A;
+
 
                         span{
                             color: #fff;
@@ -71,22 +76,25 @@
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
+                    width: 50%;
+                    margin: 2px solid red;
 
                     .contact_us_form_input{
                         display: flex;
                         gap: 30px;
 
                         input{
-                            width: 40%;
-                            background-color: #FFFFFF33;
-                            // background: transparent;
+                            width: 49%;
+                            // background-color: #FFFFFF33;
+                            background: transparent;
                             border-radius: 30px;
                             padding: 10px 20px;
                             border: 1px solid #BDBEC4;
                             color: #fff;
 
                             &::placeholder{
-                                color: #fff;
+                                color: #BDBEC4;
+                                font-family: Work Sans;
                             }
                         }
                     }
@@ -98,19 +106,20 @@
 
                         .last_input{
                             padding: 40px 20px ;
-                            width: 87%;
+                            width: 100%;
                             border-radius: 30px;
                             border: 1px solid #BDBEC4;
-                            background-color: #FFFFFF33;
+                            background-color: transparent;
                             color: #fff;
 
                             &::placeholder{
-                                color: #fff;
+                                color: #BDBEC4;
+                                font-family: Work Sans;
                             }
                         }
 
                         .contact_btn{
-                            width: 87%;
+                            width: 100%;
                             padding: 10px 20px;
                             background-color: #fff;
                             font-family: Work Sans;
@@ -181,9 +190,10 @@
             .contact_us_wrapper_two{
                 display: flex;
                 justify-content: space-between;
-                padding: 40px 40px;
+                padding: 60px 60px 40px;
                 border-radius: 50px 50px 0px 0px;
-                background: #FFFFFF33;
+                background: rgba(255, 255, 255, 0.1);
+                // background: #FFFFFF33;
 
                 .contact_us_text{
                     width: 50%;
@@ -215,7 +225,7 @@
 
                         input{
                             width: 48%;
-                            background-color: #FFFFFF33;
+                            background-color: transparent;
                             // background: transparent;
                             border-radius: 30px;
                             padding: 10px 20px;
@@ -238,7 +248,7 @@
                             width: 100%;
                             border-radius: 30px;
                             border: 1px solid #BDBEC4;
-                            background-color: #FFFFFF33;
+                            background-color: transparent;
                             color: #fff;
 
                             &::placeholder{
@@ -322,11 +332,13 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    padding: 40px 20px;
+                    padding: 60px 20px 40px;
                     border-radius: 50px 50px 0px 0px;
-                    background: #FFFFFF33;
+                    // background: rgba(250, 239, 239, 0.1);
+                    background: rgba(255, 255, 255, 0.1);
     
                     .contact_us_text{
+                        width: 100%;
     
                         h2{
                             font-family: Work Sans;
@@ -345,6 +357,7 @@
                     }
     
                     .contact_us_form{
+                        width: 100%;
                         display: flex;
                         flex-direction: column;
                         gap: 15px;
@@ -357,8 +370,7 @@
     
                             input{
                                 width: 48%;
-                                background-color: #FFFFFF33;
-                                // background: transparent;
+                                background: transparent;
                                 border-radius: 30px;
                                 padding: 10px 20px;
                                 border: 1px solid #BDBEC4;
@@ -380,7 +392,7 @@
                                 width: 100%;
                                 border-radius: 30px;
                                 border: 1px solid #BDBEC4;
-                                background-color: #FFFFFF33;
+                                background-color: transparent;
                                 color: #fff;
     
                                 &::placeholder{
