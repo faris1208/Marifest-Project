@@ -120,12 +120,20 @@
     }
 
     .logo_img{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px 30px;
-        // align-items: center;
-        // justify-content: center;
+        width: 45%;
+        height: unset !important;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+        // gap: 20px 30px;
+       
         margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0px;
+        // border: 2px solid green;
+        padding: 0px;
 
         .logo_icon{
             display: flex;
@@ -133,7 +141,11 @@
             justify-content: center;
             align-items: center;
             // padding: 20px;
-            width: 100%;
+            width:100%;
+            flex-basis: 30%;
+            // display: inline-block;
+            // border: 2px solid red;
+          
 
             .logo{
                 width: 100% !important;
@@ -161,15 +173,118 @@
             }
         }
 
-        // .logo_icon:nth-last-child(2) {
-        //     grid-column: 2 / 3;
-        //     justify-self: end;
-        // }
+        .logo_icon:nth-last-child(3) {
+            margin-top: 20px;
+    }
 
-        // .logo_icon:last-child {
-        //     grid-column: 3 / 4;
-        //     justify-self: start;
-        // }
+        .logo_icon:nth-last-child(2) {
+                margin-top: 20px;
+        }
+
+        .logo_icon:last-child {
+            margin-top: 50px;
+        }
+    }
+
+    @include responsive("tablet"){
+        .team{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        b{
+            font-family: Workbold;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 4px;
+            text-align: center;
+            color: #17154C;
+        }
+    
+        h2{
+            font-family: Workbold;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 53px;
+            letter-spacing: -0.04em;
+            text-align: center;
+            color: #F46036;
+        }
+    }
+
+    .team_two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo_img{
+        width: 60%;
+        height: unset !important;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+        // gap: 20px 30px;
+       
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0px;
+        padding: 0px;
+
+        .logo_icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // padding: 20px;
+            width:100%;
+            flex-basis: 35%;
+            // display: inline-block;
+          
+
+            .logo{
+                width: 100% !important;
+                height: unset !important;
+                margin-bottom: 10px;
+            }
+
+            b{
+                font-family: Workbold;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: center;
+                color: #17154C;
+                letter-spacing: 0px;
+            }
+
+            p{
+                font-family: Work Sans;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: center;
+                color: #17154C;
+            }
+        }
+
+        .logo_icon:nth-last-child(3) {
+            margin-top: 20px;
+    }
+
+        .logo_icon:nth-last-child(2) {
+                margin-top: 20px;
+        }
+
+        .logo_icon:last-child {
+            margin-top: 20px;
+        }
+    }
+
     }
 
     @include responsive("mobile") {
