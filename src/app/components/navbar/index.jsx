@@ -7,6 +7,7 @@ import Image from "next/image";
 import logo from "../../../../public/assets/images/logo.svg"
 import menu from "../../../../public/assets/images/menu.svg"
 import exit from "../../../../public/assets/images/exit.svg"
+import exx from "../../../../public/assets/images/exx.png"
 
 const NavBar = () => {
 
@@ -49,7 +50,15 @@ const changeColor = () => {
           </Link>
         </div>
         <div className={mobile ? styles.Navbar_List : styles.Navbar_List_isopen}>
+          
           <ul>
+            <span
+            className={styles.exx}
+            onClick={toggleMenu}
+            >
+              <Image src={exx} alt="menu" width={30} className={styles.exx_img}/>
+            </span>
+          
             <li>
               <Link href="/about">About Us</Link>
             </li>

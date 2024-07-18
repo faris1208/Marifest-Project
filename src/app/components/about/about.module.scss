@@ -108,7 +108,7 @@
             background-color: rgba(19,46,61, 0.9); /* Change the color and opacity as needed */
             z-index: 1;
             color: rgb(72, 93, 104);
-            padding: 0px 40px 100px;
+            padding: 100px 40px 100px;
     
             .hero_wrapper{
                 display: flex;
@@ -174,7 +174,7 @@
         padding: 0px 0px 00px;
     
         .background_overlay{
-            padding: 0px 0px 0px;
+            padding: 50px 0px 0px;
     
             .hero_wrapper{
                 flex-direction: column;
@@ -188,7 +188,7 @@
     
                     b{
                         font-family: Work Sans;
-                        font-size: 16px;
+                        font-size: 15px;
                         font-weight: 700;
                         line-height: 28px;
                         letter-spacing: 4px;
@@ -198,7 +198,7 @@
     
                     h2{
                         font-family: Work Sans;
-                        font-size: 40px;
+                        font-size: 35px;
                         font-weight: 600;
                         line-height: 53px;
                         letter-spacing: -0.04em;
@@ -208,7 +208,7 @@
     
                     p{
                         font-family: Work Sans;
-                        font-size: 16px;
+                        font-size: 13px;
                         font-weight: 400;
                         line-height: 24px;
                         text-align: justified;
@@ -243,6 +243,20 @@
     .bricks_img{
         width: 100% !important;
         height: unset !important;
+    }
+
+    @include responsive("tablet"){
+        width: 100%;
+        position: absolute;
+        top:-30px;
+        // margin-top: -50px;
+        z-index: 999;
+        // display: none;
+        
+        .bricks_img{
+            width: 100% !important;
+            height: unset !important;
+        }
     }
 }
 

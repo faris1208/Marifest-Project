@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "../contact/contact.module.scss"
 import NavBar from '../navbar'
+import Contacts from '../resuseable'
 
 export default function Contact() {
   return (
@@ -9,8 +10,9 @@ export default function Contact() {
         <section className={styles.contact}>
         <div className={styles.contact_overlay}></div>
         <div className={styles.contact_overlay_two}>
+          <Contacts />
           
-          <div className={styles.contact_us_wrapper}>
+          {/* <div className={styles.contact_us_wrapper}>
           
             <div className={styles.contact_us_wrapper_two}>
               <div className={styles.contact_us_text}>
@@ -28,7 +30,7 @@ export default function Contact() {
                 </div>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
