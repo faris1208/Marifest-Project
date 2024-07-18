@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import styles from "../navbar/navbar.module.scss";
@@ -10,34 +10,34 @@ import exit from "../../../../public/assets/images/exit.svg"
 
 const NavBar = () => {
 
-  // const [color, setColor] = useState(false)
+  const [color, setColor] = useState(false)
   const [mobile, setMobile] = useState(true);
 
   const toggleMenu = () => {
     setMobile((open) => !open)
 }
 
-// const changeColor = () => {
-//   if (window.scrollY >= 310){
-//     setColor(true)
-//     setMobile(mobile);
-//   }else {
-//     setColor(false)
-//   }
+const changeColor = () => {
+  if (window.scrollY >= 510){
+    setColor(true)
+    setMobile(mobile);
+  }else {
+    setColor(false)
+  }
   
-// }
+}
 
 
-  // useEffect(() => {
+  useEffect(() => {
   
-  //   window.addEventListener('scroll', changeColor)
-  // }, []);
+    window.addEventListener('scroll', changeColor)
+  }, []);
 
   const router = useRouter();
   
 
   return (
-      <nav className={styles.navbar}>
+      <nav className={color ? styles.navbar_bg : styles.navbar}>
         <div className={styles.logo_image}>
           <Link href="/landing">
             <Image 
