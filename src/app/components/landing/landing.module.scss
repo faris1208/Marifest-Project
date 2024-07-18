@@ -266,7 +266,7 @@
                 letter-spacing: -0.02em;
                 text-align: left;
                 color: #EBEBEB;
-                width: 100%;
+                width: 72%;
             }
 
             .hero_buttons{
@@ -547,22 +547,22 @@
     
             b{
                 font-family: Workbold;
-                font-size: 13px;
+                font-size: 12px;
                 font-weight: bolder;
                 line-height: 28px;
-                letter-spacing: 4px;
+                letter-spacing: 1px;
                 text-align: left;
                 color: #17154C;
             }
     
             h3{
                 font-family: Workbold;
-                font-size: 25px;
+                font-size: 20px;
                 font-weight: 600;
                 letter-spacing: -0.04em;
                 text-align: left;
                 color: #DA6F51;
-                margin: 20px 0px;
+                margin: 0px 0px;
             }
     
             p{
@@ -612,9 +612,9 @@
                 .first_text{
     
                     h3{
-                        font-family: Workbold;
-                        font-size: 34px;
-                        font-weight: 600;
+                        font-family: Work Sans;
+                        font-size: 30px;
+                        font-weight: bolder;
                         line-height: 45.65px;
                         text-align: left;
                         color: #17154C;
@@ -918,6 +918,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 5px;
 
 
         h2{
@@ -932,12 +933,12 @@
     
         p{
             font-family: Work Sans;
-            font-size: 13px;
+            font-size: 15px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 18px;
             text-align: center;
             color: #17154C;
-            width: 80%;
+            width: 85%;
         }
     }
     
@@ -994,7 +995,7 @@
 
         @include responsive("mobile") {
             margin-top: 0px;
-            margin-bottom: 20px;
+            margin-bottom: 60px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1002,9 +1003,9 @@
 
             h2{
                 font-family: Workbold;
-                font-size: 25px;
+                font-size: 24px;
                 font-weight: 600;
-                line-height: 33px;
+                line-height: 24px;
                 letter-spacing: -0.04em;
                 text-align: center;
                 color: #DA6F51;
@@ -1043,7 +1044,7 @@
         width: 100%;
         padding: 0px 0px;
         gap: 10px;
-        margin-top: 0px;
+        margin-top: 20px;
 
         .logo_icon{
             width: 100%;

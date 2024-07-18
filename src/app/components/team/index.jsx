@@ -54,7 +54,7 @@ export default function Team() {
 
           <section className={styles.board_team}>
           <b>TEAM MARITEST</b>
-          <h2>Founding Team</h2>
+          <h2>Advisory Board</h2>
           <div className={styles.logo_img}>
               {board.map((item, i) => (
                 <div
