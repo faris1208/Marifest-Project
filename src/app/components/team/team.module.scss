@@ -125,7 +125,7 @@
         }
     
         h2{
-            font-family: Workbold;
+            font-family: semibold;
             font-size: 40px;
             font-weight: 600;
             line-height: 53px;
@@ -142,18 +142,18 @@
     }
 
     .logo_img{
-        width: 45%;
-        height: unset !important;
+        width: 46%;
+        // height: unset !important;
         // display: grid;
         // grid-template-columns: 1fr 1fr 1fr;
         // gap: 20px 30px;
        
         margin-top: 40px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        gap: 0px;
+        gap: 10px;
         // border: 2px solid green;
         padding: 0px;
 
@@ -164,7 +164,7 @@
             align-items: center;
             // padding: 20px;
             width:100%;
-            flex-basis: 30%;
+            flex-basis: 31%;
             // display: inline-block;
             // border: 2px solid red;
           
@@ -195,16 +195,18 @@
             }
         }
 
-        .logo_icon:nth-last-child(3) {
-            margin-top: 20px;
-    }
+    //     .logo_icon:nth-last-child(3) {
+    //         margin-top: 20px;
+    // }
 
         .logo_icon:nth-last-child(2) {
                 margin-top: 20px;
+                margin-left: 100px;
         }
 
         .logo_icon:last-child {
-            margin-top: 50px;
+            margin-top: 40px;
+            margin-right: 100px;
         }
     }
 
@@ -294,17 +296,17 @@
             }
         }
 
-        .logo_icon:nth-last-child(3) {
-            margin-top: 20px;
-    }
+    //     .logo_icon:nth-last-child(3) {
+    //         margin-top: 20px;
+    // }
 
-        .logo_icon:nth-last-child(2) {
-                margin-top: 20px;
-        }
+        // .logo_icon:nth-last-child(2) {
+        //         margin-top: 20px;
+        // }
 
-        .logo_icon:last-child {
-            margin-top: 20px;
-        }
+        // .logo_icon:last-child {
+        //     margin-top: 20px;
+        // }
     }
 
     }
@@ -333,10 +335,10 @@
         }
     
         h2{
-            font-family: Workbold;
-            font-size:35px;
-            font-weight: 600;
-            line-height: 33px;
+            font-family: semibold;
+            font-size:24px;
+            font-weight: 700;
+            line-height: 24px;
             letter-spacing: -0.04em;
             text-align: center;
             color: #F46036;
@@ -358,6 +360,7 @@
             margin-top: 40px;
             padding: 0px;
             width: 100%;
+            flex-wrap: nowrap;
     
             .logo_icon{
                 display: flex;
@@ -366,6 +369,7 @@
                 align-items: center;
                 width: 100%;
                 padding: 0px;
+                flex-basis: 100%;
     
                 .logo{
                     // object-fit: contain;
@@ -394,6 +398,21 @@
                 }
             }
         }
+
+        .logo_icon:nth-last-child(3) {
+            margin-bottom: -20px;
+    }
+
+        .logo_icon:nth-last-child(2) {
+            margin-bottom: -40px;
+            margin-right: 100px;
+    }
+
+    .logo_icon:last-child {
+        margin-top: -40px;
+        margin-left: 100px;
+        width: 100%;
+    }
     }
 }
 
@@ -430,7 +449,7 @@
     }
 
     h2{
-        font-family: Workbold;
+        font-family: semibold;
         font-size: 40px;
         font-weight: 600;
         line-height: 53px;
@@ -461,7 +480,7 @@
 
             b{
                 font-family: Workbold;
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 600;
                 line-height: 24px;
                 text-align: center;
@@ -471,7 +490,7 @@
 
             p{
                 font-family: Work Sans;
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 400;
                 line-height: 24px;
                 text-align: center;
@@ -568,10 +587,10 @@
         }
     
         h2{
-            font-family: Workbold;
-            font-size: 35px;
-            font-weight: 600;
-            line-height: 33px;
+            font-family: semibold;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
             letter-spacing: -0.04em;
             text-align: center;
             color: #F46036;
@@ -599,7 +618,7 @@
                 }
     
                 b{
-                    font-family: Work Sans;
+                    font-family: Workbold;
                     font-size: 14px;
                     font-weight: 600;
                     line-height: 24px;
@@ -610,7 +629,7 @@
     
                 p{
                     font-family: Work Sans;
-                    font-size: 14px;
+                    font-size: 16px;
                     font-weight: 400;
                     line-height: 24px;
                     text-align: center;

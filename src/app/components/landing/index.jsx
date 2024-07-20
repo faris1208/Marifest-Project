@@ -40,10 +40,10 @@ export default function Landing() {
         <div className={styles.heading_first}>
           <div className={styles.heading_first_text}>
             <b>OUR RATIONALE</b>
-            <h3>Why We Do What We Do</h3>
+            <h2>Why We Do What We Do</h2>
             <p>Malaria remains a leading cause of illness and death in many countries. Over 200 million cases are reported annually, with the majority (94%) being in sub-Saharan Africa. As a result, 95% of Malaria deaths occur in the region. </p>
             <p>Children under five are particularly vulnerable, with one child dying every two minutes from malaria. These are not just statistics – they are real lives, real families, and real futures at stake.</p>
-            <small>Source: World Malaria Report 2023 by WHO</small>
+            <i><span>Source:</span> World Malaria Report 2023 by WHO</i>
           </div>
           <div className={styles.heading_first_img}>
             <Image 
@@ -74,11 +74,11 @@ export default function Landing() {
             />
           </div>
           <div className={styles.heading_second_text}>
-            <h3>The Urgency of Early Malaria Diagnosis</h3>
+            <h2>The Urgency of Early Malaria Diagnosis</h2>
             <p>Current diagnostic methods are often invasive, time-consuming, and inaccessible to those in remote areas. </p>
             <p>According to the Malaria Journal, community-based early diagnosis and treatment are crucial in reducing malaria deaths. These methods prevent transmission, lower recurrence rates, and are cost-effective, especially in resource-limited settings. Furthermore, early diagnosis and treatment within 24-48 hours of fever onset significantly reduce parasite transmission, thereby preventing further infections. </p>
             <p>This reality drives our unwavering commitment to developing a more effective, accessible, and non-invasive diagnostic tool. Our mission is to save lives and bring hope to communities burdened by malaria.</p>
-            <small>Source: Malaria Journal</small>
+            <i><span>Source:</span> Malaria Journal</i>
           </div>
         </div>
         <div className={styles.side_conatiner}>

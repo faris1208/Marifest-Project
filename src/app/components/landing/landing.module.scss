@@ -27,10 +27,15 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(72, 93, 104, 0.5); /* Change the color and opacity as needed */
+        // background-color: rgba(72, 93, 104, 0.6);
         z-index: 1;
         color: rgb(72, 93, 104);
         padding: 100px 0px 50px;
+
+        background-image: url("../../../../public/assets/images/faris.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         .hero_wrapper{
             display: flex;
@@ -52,7 +57,7 @@
 
             p{
                 font-family: Work Sans;
-                font-size: 14px;
+                font-size: 1.0rem;
                 font-weight: 500;
                 line-height: 20px;
                 letter-spacing: -0.02em;
@@ -260,7 +265,7 @@
 
             p{
                 font-family: Work Sans;
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 500;
                 line-height: 15px;
                 letter-spacing: -0.02em;
@@ -369,44 +374,48 @@
 
         b{
             font-family: Workbold;
-            font-size: 15px;
-            font-weight: 900;
+            font-size: 18px;
+            font-weight: 700;
             line-height: 28px;
             letter-spacing: 4px;
             text-align: left;
             color: #17154C;
         }
 
-        h3{
-            font-family: Workbold;
+        h2{
+            font-family: semibold;
             font-size: 40px;
             font-weight: 600;
             letter-spacing: -0.04em;
             text-align: left;
             color: #DA6F51;
-            margin: 20px 0px;
+            margin: 5px 0px 20px;
         }
 
         p{
             font-family: Work Sans;
-            font-size: 14px;
+            font-size: 1rem;
             font-weight: 400;
             line-height: 20px;
             text-align: justified;
             color: #17154C;
             margin-top: 15px;
             margin-bottom: 20px;
-            width: 70%;
+            width: 75%;
         }
 
-        small{
+        i{
             font-family: Work Sans;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 400;
             // line-height: 18.77px;
             text-align: left;
             color: #DA6F51;
             margin: 40px 0px;
+
+            span{
+                font-family: semibold;
+            }
         }
     }
 
@@ -548,16 +557,16 @@
             b{
                 font-family: Workbold;
                 font-size: 12px;
-                font-weight: bolder;
+                font-weight: 700;
                 line-height: 28px;
                 letter-spacing: 1px;
                 text-align: left;
                 color: #17154C;
             }
     
-            h3{
-                font-family: Workbold;
-                font-size: 20px;
+            h2{
+                font-family: semibold;
+                font-size: 24px;
                 font-weight: 600;
                 letter-spacing: -0.04em;
                 text-align: left;
@@ -567,24 +576,25 @@
     
             p{
                 font-family: Work Sans;
-                font-size: 13px;
+                font-size: 16px;
                 font-weight: 400;
                 line-height: 20px;
                 text-align: justified;
                 color: #17154C;
                 margin-top: 15px;
-                margin-bottom: 20px;
+                margin-bottom: 0px;
                 width: 100%;
             }
     
-            small{
+            i{
                 font-family: Work Sans;
                 font-size: 12px;
                 font-weight: 400;
                 // line-height: 18.77px;
                 text-align: left;
                 color: #DA6F51;
-                margin: 40px 0px;
+                // margin: 10px 0px;
+                
             }
         }
     
@@ -612,8 +622,8 @@
                 .first_text{
     
                     h3{
-                        font-family: Work Sans;
-                        font-size: 30px;
+                        font-family: semibold;
+                        font-size: 32px;
                         font-weight: bolder;
                         line-height: 45.65px;
                         text-align: left;
@@ -622,7 +632,7 @@
     
                     p{
                         font-family: Work Sans;
-                        font-size: 12px;
+                        font-size: 14px;
                         font-weight: 400;
                         line-height: 18.13px;
                         text-align: left;
@@ -652,11 +662,11 @@
         width: 50%;
         padding: 0px 120px 0px 0px;
 
-        h3{
-            font-family: Workbold;
+        h2{
+            font-family: semibold;
             font-size: 40px;
             font-weight: 600;
-            line-height: 53px;
+            line-height: 43px;
             letter-spacing: -0.04em;
             text-align: left;
             color: #DA6F51;
@@ -665,22 +675,26 @@
 
         p{
             font-family: Work Sans;
-            font-size: 14px;
+            font-size: 1rem;
             font-weight: 400;
             line-height: 24px;
             text-align: justified;
             color: #17154C;
-            margin: 20px 0px;
+            margin: 18px 0px;
             width: 90%;
         }
 
-        small{
+        i{
             font-family: Work Sans;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 400;
             line-height: 18.77px;
             text-align: left;
             color: #DA6F51;
+
+            span{
+                font-family: semibold;
+            }
         }
         
     }
@@ -759,11 +773,11 @@
             width: 100%;
             padding: 0px 0px 0px 0px;
     
-            h3{
-                font-family: Workbold;
-                font-size: 30px;
-                font-weight: 600;
-                line-height: 33px;
+            h2{
+                font-family: semibold;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 24px;
                 letter-spacing: -0.04em;
                 text-align: left;
                 color: #DA6F51;
@@ -772,12 +786,12 @@
     
             p{
                 font-family: Work Sans;
-                font-size: 13px;
+                font-size: 16px;
                 font-weight: 400;
-                line-height: 24px;
+                line-height: 18px;
                 text-align: justified;
                 color: #17154C;
-                margin: 20px 0px;
+                margin: 20px 0px 10px;
                 width: 100%;
             }
     
@@ -823,10 +837,10 @@
 
 
         h2{
-            font-family: Workbold;
+            font-family: semibold;
             font-size: 40px;
             font-weight: 600;
-            line-height: 53px;
+            line-height: 43px;
             letter-spacing: -0.04em;
             text-align: center;
             color: #DA6F51;
@@ -834,12 +848,13 @@
     
         p{
             font-family: Work Sans;
-            font-size: 15px;
+            font-size: 1rem;
             font-weight: 400;
             line-height: 24px;
             text-align: center;
             color: #17154C;
             width: 30%;
+            margin-top: 15px;
         }
     }
 
@@ -910,7 +925,7 @@
         // flex-direction: column;
         // justify-content: flex-start;
         // align-items: flex-start;
-        gap: 10px;
+        gap: 0px;
         padding: 50px 0px 0px;
 
         .journey_text{
@@ -918,14 +933,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 5px;
+            gap: 0px;
 
 
         h2{
-            font-family: Workbold;
-            font-size: 30px;
-            font-weight: 600;
-            line-height: 53px;
+            font-family: semibold;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 40px;
             letter-spacing: -0.04em;
             text-align: center;
             color: #DA6F51;
@@ -933,12 +948,13 @@
     
         p{
             font-family: Work Sans;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 400;
             line-height: 18px;
             text-align: center;
             color: #17154C;
             width: 85%;
+            margin-top: 5px;
         }
     }
     
@@ -969,10 +985,10 @@
     margin-top: 100px;
 
         h2{
-            font-family: Workbold;
+            font-family: semibold;
             font-size: 40px;
             font-weight: 600;
-            line-height: 53px;
+            line-height: 43px;
             letter-spacing: -0.04em;
             text-align: center;
             color: #DA6F51;
@@ -1002,9 +1018,9 @@
             align-items: center;
 
             h2{
-                font-family: Workbold;
+                font-family: semibold;
                 font-size: 24px;
-                font-weight: 600;
+                font-weight: 700;
                 line-height: 24px;
                 letter-spacing: -0.04em;
                 text-align: center;
