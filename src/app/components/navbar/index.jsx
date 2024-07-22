@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect, useState } from "react";
+import React, {useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import styles from "../navbar/navbar.module.scss";
@@ -21,21 +21,30 @@ const NavBar = () => {
     setMobile((open) => !open)
 }
 
-const changeColor = () => {
+const changeColor = useCallback(() => {
   if (window.scrollY >= 510){
     setColor(true)
     setMobile(mobile);
-  }else {
+  }else{
     setColor(false)
   }
-  
-}
+    
+}, [mobile]); 
+
+// const changeColor = () => {
+//   if (window.scrollY >= 510){
+//     setColor(true)
+//     setMobile(mobile);
+//   }else {
+//     setColor(false)
+//   }
+// }
 
 
   useEffect(() => {
   
     window.addEventListener('scroll', changeColor)
-  }, []);
+  }, [changeColor]);
 
   
 
