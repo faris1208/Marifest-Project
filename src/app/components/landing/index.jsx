@@ -5,20 +5,32 @@ import Image from 'next/image'
 import bricks from "../../../../public/assets/images/bricks.svg"
 import boys from "../../../../public/assets/images/boys.svg"
 import cool from "../../../../public/assets/images/Element.svg"
-import group from "../../../../public/assets/images/home.svg"
+import group from "../../../../public/assets/images/Our journey.webp"
 import { logo } from "../data/index"
 import Contacts from '../resuseable'
 import left from "../../../../public/assets/images/Element.svg"
 import right from "../../../../public/assets/images/yellow.svg"
+import circle from "../../../../public/assets/images/circle.svg"
 
 export default function Landing() {
   return (
     <div className={styles.hero_container}>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={styles.background_image}>
         <div className={styles.background_overlay}>
           <div className={styles.hero_wrapper}>
-            <h1>A Future Without Malaria</h1>
+            <h1>A Future 
+              <br />
+              <span>
+              <Image
+              src={circle}
+              alt='circle'
+              width={100}
+              className={styles.circle}
+               />
+              Without
+              </span>
+               Malaria</h1>
             <p>Innovative, bloodless, automated, and rapid diagnosis and prescription for a healthier tomorrow</p>
             <div className={styles.hero_buttons}>
               <button className={styles.hero_btn1}>Join the fight!</button>

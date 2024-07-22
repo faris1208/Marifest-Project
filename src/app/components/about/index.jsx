@@ -12,7 +12,7 @@ import Contacts from '../resuseable'
 export default function About() {
   return (
     <div className={styles.hero_container}>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className={styles.background_image}>
         <div className={styles.background_overlay}>
           <div className={styles.hero_wrapper}>

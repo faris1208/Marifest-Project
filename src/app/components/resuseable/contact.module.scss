@@ -432,3 +432,24 @@
       }
 
 }
+
+.load_btn{
+    width: 100%;
+    padding: 6px 20px;
+    background-color: #b9b7b7;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #132E3D;
+    border-radius: 30px ;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #e6e4e4;
+    }
+
+}

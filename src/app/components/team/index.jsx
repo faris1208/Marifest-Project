@@ -9,7 +9,7 @@ import Contacts from '../resuseable'
 export default function Team() {
   return (
     <div className={styles.hero_container}>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className={styles.background_image}>
         <div className={styles.background_overlay}>
           

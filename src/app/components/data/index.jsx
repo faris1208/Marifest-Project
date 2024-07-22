@@ -12,10 +12,10 @@ import stanley from "../../../../public/assets/images/stanley.svg"
 import delight from "../../../../public/assets/images/delight.svg"
 import hamza from "../../../../public/assets/images/hamza.svg"
 import tinanshe from "../../../../public/assets/images/tinanshe.svg"
-import koki from "../../../../public/assets/images/koki.svg"
-import anne from "../../../../public/assets/images/anne.svg"
-import jallow from "../../../../public/assets/images/jallow.svg"
-import kerubo from "../../../../public/assets/images/john.svg"
+import koki from "../../../../public/assets/images/Koki Ajiri.webp"
+import anne from "../../../../public/assets/images/Anne Kerubo.webp"
+import jallow from "../../../../public/assets/images/Maudo jallow.webp"
+import kerubo from "../../../../public/assets/images/John Mwanji 1.webp"
 
 export const logo = [
     {

@@ -8,8 +8,11 @@ import logo from "../../../../public/assets/images/logo.svg"
 import menu from "../../../../public/assets/images/menu.svg"
 import exit from "../../../../public/assets/images/exit.svg"
 import exx from "../../../../public/assets/images/exx.png"
+// import { useRouter } from "next/router";
 
 const NavBar = () => {
+
+  const router = useRouter();
 
   const [color, setColor] = useState(false)
   const [mobile, setMobile] = useState(true);
@@ -34,7 +37,6 @@ const changeColor = () => {
     window.addEventListener('scroll', changeColor)
   }, []);
 
-  const router = useRouter();
   
 
   return (
@@ -44,7 +46,7 @@ const changeColor = () => {
             <Image 
             src={logo}
             alt="logo"
-            width={150}
+            width={180}
             className={styles.logo_img}
             />
           </Link>
@@ -59,7 +61,7 @@ const changeColor = () => {
               <Image src={exx} alt="menu" width={30} className={styles.exx_img}/>
             </span>
           
-            <li>
+            <li  className={router.pathname === '/about' ? styles.active : ''}>
               <Link href="/about">About Us</Link>
             </li>
             <li>

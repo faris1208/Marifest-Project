@@ -2,8 +2,8 @@
 
 .hero_container{
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+    // max-width: 1440px;
+    // margin: 0 auto;
 
     @include responsive("tablet") {
         max-width: 1023px;
@@ -201,12 +201,12 @@
 
         .logo_icon:nth-last-child(2) {
                 margin-top: 20px;
-                margin-left: 100px;
+                margin-left: 105px;
         }
 
         .logo_icon:last-child {
             margin-top: 40px;
-            margin-right: 100px;
+            margin-right: 105px;
         }
     }
 

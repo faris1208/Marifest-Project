@@ -6,7 +6,7 @@ import Contacts from '../resuseable'
 export default function Contact() {
   return (
     <div className={styles.hero_container}>
-      <NavBar />
+      {/* <NavBar /> */}
         <section className={styles.contact}>
         <div className={styles.contact_overlay}></div>
         <div className={styles.contact_overlay_two}>
