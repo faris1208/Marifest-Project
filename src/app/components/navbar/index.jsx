@@ -31,15 +31,6 @@ const changeColor = useCallback(() => {
     
 }, [mobile]); 
 
-// const changeColor = () => {
-//   if (window.scrollY >= 510){
-//     setColor(true)
-//     setMobile(mobile);
-//   }else {
-//     setColor(false)
-//   }
-// }
-
 
   useEffect(() => {
   
