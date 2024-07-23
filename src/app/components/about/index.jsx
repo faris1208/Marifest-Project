@@ -3,8 +3,8 @@ import NavBar from '../navbar'
 import bricks from "../../../../public/assets/images/bricks.svg"
 import Image from 'next/image'
 import styles from "../about/about.module.scss"
-import kids from "../../../../public/assets/images/image - our mission.webp"
-import man from "../../../../public/assets/images/image - our story.webp"
+import kids from "../../../../public/assets/images/mission.webp"
+import man from "../../../../public/assets/images/story.webp"
 import yellow from "../../../../public/assets/images/yellow.svg"
 import Contacts from '../resuseable'
 
