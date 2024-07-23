@@ -271,16 +271,12 @@
     position: fixed;
     top: 40px;
     left: 20px;
-    // border: 2px solid red;
     border-radius: 0px;
     border-radius: 100px;
-    // z-index: 9999;
-    // border: 2px solid red;
   }
 
   .Navbar_List{
     display: block;
-    
 
     @include responsive("mobile") {
         display: none;
@@ -335,6 +331,7 @@
       position: fixed;
       transition: 0.7s;
       z-index: 999;
+      
 
       span{
         width: 100%;

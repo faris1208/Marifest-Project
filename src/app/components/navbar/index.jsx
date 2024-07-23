@@ -1,18 +1,15 @@
 "use client";
-import React, {useCallback, useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import styles from "../navbar/navbar.module.scss";
 import Image from "next/image";
 import logo from "../../../../public/assets/images/logo.svg"
 import menu from "../../../../public/assets/images/menu.svg"
-import exit from "../../../../public/assets/images/exit.svg"
-import exx from "../../../../public/assets/images/exx.png"
-// import { useRouter } from "next/router";
+import exit from "../../../../public/assets/images/exx.png"
+// import exx from "../../../../public/assets/images/exx.svg"
 
 const NavBar = () => {
-
-  const router = useRouter();
 
   const [color, setColor] = useState(false)
   const [mobile, setMobile] = useState(true);
@@ -21,15 +18,15 @@ const NavBar = () => {
     setMobile((open) => !open)
 }
 
-const changeColor = useCallback(() => {
+const changeColor = () => {
   if (window.scrollY >= 510){
     setColor(true)
     setMobile(mobile);
-  }else{
+  }else {
     setColor(false)
   }
-    
-}, [mobile]); 
+  
+}
 
 
   useEffect(() => {
@@ -37,6 +34,11 @@ const changeColor = useCallback(() => {
     window.addEventListener('scroll', changeColor)
   }, [changeColor]);
 
+  const router = useRouter();
+
+  const handleNavbar = () => {
+    toggleMenu()
+  }
   
 
   return (
@@ -46,7 +48,7 @@ const changeColor = useCallback(() => {
             <Image 
             src={logo}
             alt="logo"
-            width={180}
+            width={150}
             className={styles.logo_img}
             />
           </Link>
@@ -55,19 +57,18 @@ const changeColor = useCallback(() => {
           
           <ul>
             <span
-            className={styles.exx}
             onClick={toggleMenu}
             >
-              <Image src={exx} alt="menu" width={30} className={styles.exx_img}/>
+              <Image src={exit} alt="menu" width={25}/>
             </span>
           
-            <li  className={router.pathname === '/about' ? styles.active : ''}>
+            <li  onClick={() => {handleNavbar("/about") ;}}>
               <Link href="/about">About Us</Link>
             </li>
-            <li>
+            <li  onClick={() => {handleNavbar("/team") ;}}>
               <Link href="/team">The Team</Link>
             </li>
-            <li>
+            <li  onClick={() => {handleNavbar("/contact") ;}}>
               <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
