@@ -35,10 +35,9 @@
         }
     }
 
-    // .logo_icon:nth-child(1){
-    //     border: 2px solid yellow;
-    //     margin-top: -3px;
-    // }
+    .logo_icon:nth-child(1){
+        margin-top: -3px;
+    }
 
     @include responsive("mobile") {
         display: flex;
