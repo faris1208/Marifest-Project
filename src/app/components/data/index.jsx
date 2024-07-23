@@ -36,18 +36,22 @@ export const logo = [
    
 ];
 
-export const facebook = [
+export const face = [
     {
         icon: ink,
+        href: "https://www.linkedin.com/company/mari-test-africa/?viewAsMember=true",
     },
     {
         icon: instagram,
+        href: "https://www.instagram.com/maritest_africa?igsh=c3Y0dGdrZnYwODl1",
     },
     {
         icon: mail,
+        href: "https://www.linkedin.com/company/mari-test-africa/?viewAsMember=true",
     },
     {
         icon: twitter,
+        href: "https://www.linkedin.com/company/mari-test-africa/?viewAsMember=true",
     },
 ];
 

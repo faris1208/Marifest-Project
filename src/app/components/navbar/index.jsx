@@ -1,17 +1,16 @@
 "use client";
 import React, {useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import styles from "../navbar/navbar.module.scss";
 import Image from "next/image";
 import logo from "../../../../public/assets/images/logo.svg"
 import menu from "../../../../public/assets/images/menu.svg"
 import exit from "../../../../public/assets/images/exx.png"
-// import exx from "../../../../public/assets/images/exx.svg"
 
 const NavBar = () => {
 
-  const [color, setColor] = useState(false)
+  const [color, setColor] = useState(false);
   const [mobile, setMobile] = useState(true);
 
   const toggleMenu = () => {
@@ -42,11 +41,13 @@ const changeColor = useCallback(() => {
     window.addEventListener('scroll', changeColor)
   }, [changeColor]);
 
-  const router = useRouter();
 
   const handleNavbar = () => {
     toggleMenu()
   }
+
+  const pathname = usePathname();
+  
   
 
   return (
@@ -70,13 +71,13 @@ const changeColor = useCallback(() => {
               <Image className={styles.exx} src={exit} alt="menu" width={30}/>
             </span>
           
-            <li  onClick={() => {handleNavbar("/about") ;}}>
+            <li className={`${pathname === "/about" ? styles.active : ""}`} onClick={() => {handleNavbar("/about")  ;}}>
               <Link href="/about">About Us</Link>
             </li>
-            <li  onClick={() => {handleNavbar("/team") ;}}>
+            <li className={`${pathname === "/team" ? styles.active : ""}`} onClick={() => {handleNavbar("/team") ;}}>
               <Link href="/team">The Team</Link>
             </li>
-            <li  onClick={() => {handleNavbar("/contact") ;}}>
+            <li className={`${pathname === "/contact" ? styles.active : ""}`} onClick={() => {handleNavbar("/contact") ;}}>
               <Link href="/contact">Contact Us</Link>
             </li>
           </ul>

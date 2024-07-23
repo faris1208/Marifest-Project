@@ -2,8 +2,9 @@ import React from 'react'
 import styles from "../footer/footer.module.scss"
 import logo from "../../../../public/assets/images/logo.svg"
 import Image from 'next/image'
-import{ facebook } from "../data/index"
+import{ face } from "../data/index"
 import line from "../../../../public/assets/images/line.svg"
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -12,22 +13,56 @@ export default function Footer() {
           <Image 
           src={logo}
           alt='logo'
-          width={120}
+          width={150}
           className={styles.logoPimg}
           />
         </div>
         <div className={styles.logo_img}>
-            {facebook.map((item, i) => (
+            {face.map((item, i) => (
               <div
                 key={i}
                 className={styles.logo_icon}
               >
+
+                {/* {face.facebook && (
+              <a href={face.facebook} target="_blank" rel="noopener noreferrer">
                 <Image 
-                src={item.icon}
+                src={face.icons}
                 alt='logos'
                 width={18}
                 className={styles.logo}
                 />
+              </a>
+            )} */}
+                {/* <Image 
+                src={item.icon}
+                alt='logos'
+                width={18}
+                className={styles.logo}
+                /> */}
+                {item.href.startsWith('http') ? (
+                  <a href={item.href} target="_blank" rel="noopener noreferrer">
+                     <Image 
+                      src={item.icon.src}
+                      alt='icon'
+                      width={item.icon.width}
+                      height={item.icon.height}
+                      className={styles.logo}
+                    />
+                  </a>
+                ) : (
+                  <Link href={item.href}>
+                    <a>
+                      <Image 
+                        src={item.icon.src}
+                        alt='logos'
+                        width={18}
+                        className={styles.logo}
+                      />
+                    </a>
+                  </Link>
+                )}
+
               </div>
             ))}
           </div>

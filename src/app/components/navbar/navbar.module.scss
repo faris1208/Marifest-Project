@@ -1,9 +1,19 @@
 @import "../../styles/index.scss";
 
-.active {
-  background-color: green;
-  color: red;
-  font-size: xx-large;
+.active{
+  // color: #FFCDA8 !important;
+  
+
+  a{
+    color: #FFCDA8 !important;
+    text-decoration: none;
+  }
+}
+
+.new{
+  color: green;
+  border: 2px solid green;
+  font-size: 35px;
 }
 
 .navbar_bg {
@@ -173,6 +183,13 @@
 
   li {
     padding-bottom: 2px;
+
+    // .active {
+    //   background-color: green;
+    //   color: #FFCDA8;
+    //   border: 2px solid red;
+    // }
+
   }
 
   a {
@@ -214,7 +231,7 @@
   text-align: center;
   @include flex(0);
   position: fixed;
-  top: 60px;
+  top: 80px;
   left: 90px;
   z-index: 999;
   width: 85%;

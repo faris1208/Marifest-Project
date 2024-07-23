@@ -20,7 +20,7 @@ export default function Team() {
       <div className={styles.founding_container}>
         <section className={styles.founding_team}>
           <div className={styles.team}>
-            <b>TEAM MARITEST</b>
+            {/* <b>TEAM MARITEST</b> */}
             <h2>Founding Team</h2>
           </div>
           <div className={styles.team_two}>
