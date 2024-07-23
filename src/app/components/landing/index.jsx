@@ -72,7 +72,7 @@ export default function Landing() {
             <div className={styles.heading_first_text_img_text}>
               <div className={styles.first_text}>
                 <h3>249M</h3>
-                <p>Malaria cases globally in 2022</p>
+                <p>Malaria cases in 2022</p>
               </div>
               <div className={styles.first_text}>
                 <h3>608K</h3>

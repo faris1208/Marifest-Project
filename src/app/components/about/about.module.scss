@@ -2,8 +2,8 @@
 
 .hero_container{
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+    // max-width: 1440px;
+    // margin: 0 auto;
 
     @include responsive("tablet") {
         max-width: 1023px;
@@ -192,10 +192,11 @@
                         font-family: Workbold;
                         font-size: 13px;
                         font-weight: 700;
-                        line-height: 20px;
+                        line-height: 28px;
                         letter-spacing: 1px;
                         text-align: left;
                         color: #FFCEA9;
+                        // border: 2px solid red;
                     }
     
                     h2{
