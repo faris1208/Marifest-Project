@@ -139,7 +139,7 @@ export default function Landing() {
                 <Image 
                 src={item.icon}
                 alt='logos'
-                width={150}
+                width={220}
                 className={styles.logo}
                 />
               </div>

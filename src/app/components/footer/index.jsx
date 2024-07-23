@@ -12,7 +12,7 @@ export default function Footer() {
           <Image 
           src={logo}
           alt='logo'
-          width={180}
+          width={120}
           className={styles.logoPimg}
           />
         </div>
@@ -25,7 +25,7 @@ export default function Footer() {
                 <Image 
                 src={item.icon}
                 alt='logos'
-                width={20}
+                width={18}
                 className={styles.logo}
                 />
               </div>

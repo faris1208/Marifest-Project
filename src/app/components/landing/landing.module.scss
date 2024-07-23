@@ -1079,16 +1079,19 @@
         // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         align-items: center;
         width: 100%;
-        padding: 0px 20px;
+        padding: 0px 0px;
         gap: 10px;
         margin-top: 20px;
+        // border: 2px solid red;
 
         .logo_icon{
-            width: 80%;
+            width: 100%;
+            // border: 2px solid green;
 
             .logo{
                 width: 100% !important;
-                // height: unset !important;
+                height: unset !important;
+                // border: 2px solid yellow;
             }
         }
 
