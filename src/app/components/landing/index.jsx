@@ -11,6 +11,7 @@ import Contacts from '../resuseable'
 import left from "../../../../public/assets/images/Element.svg"
 import right from "../../../../public/assets/images/yellow.svg"
 import circle from "../../../../public/assets/images/circle.svg"
+import Link from 'next/link'
 
 export default function Landing() {
   return (
@@ -33,8 +34,12 @@ export default function Landing() {
                Malaria</h1>
             <p>Innovative, bloodless, automated, and rapid diagnosis and prescription for a healthier tomorrow</p>
             <div className={styles.hero_buttons}>
-              <button className={styles.hero_btn1}>Join the fight!</button>
-              <button className={styles.hero_btn2}>Learn more</button>
+              <Link href={'/contact'}>
+                <button className={styles.hero_btn1}>Join the fight!</button>
+              </Link>
+              <Link href={'/contact'}>
+                <button className={styles.hero_btn2}>Learn more</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -3,8 +3,8 @@ import NavBar from '../navbar'
 import bricks from "../../../../public/assets/images/bricks.svg"
 import Image from 'next/image'
 import styles from "../about/about.module.scss"
-import kids from "../../../../public/assets/images/kids.svg"
-import man from "../../../../public/assets/images/man.svg"
+import kids from "../../../../public/assets/images/image - our mission.webp"
+import man from "../../../../public/assets/images/image - our story.webp"
 import yellow from "../../../../public/assets/images/yellow.svg"
 import Contacts from '../resuseable'
 
@@ -51,7 +51,7 @@ export default function About() {
              />
           </div>
           <div className={styles.story_text}>
-            <b>TEAM MARITEST</b>
+            {/* <b>TEAM MARITEST</b> */}
             <h2>Our Story</h2>
             <p>In 2021, an unexpected encounter changed our founder Kakooza Hakims life that sparked the creation of MariTest. While interning on the remote Bussi Island in Uganda, Kakooza experienced a severe bout of fever. Despite having faced fever before, this time was different and much worse.</p>
             <p>One morning, Kakooza felt the familiar signs of malaria. But by this time, the fever had escalated. He went to a local healthcare center, only to wait three grueling hours and be told that they had run out of Malaria Rapid Diagnostic Test kits (RDTs) and antimalarial drugs. With COVID-19 lockdowns in place, he was stuck on the island with few options.</p>

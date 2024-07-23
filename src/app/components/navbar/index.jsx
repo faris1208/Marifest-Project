@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect, useState } from "react";
+import React, {useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import styles from "../navbar/navbar.module.scss";
@@ -18,15 +18,23 @@ const NavBar = () => {
     setMobile((open) => !open)
 }
 
-const changeColor = () => {
+const changeColor = useCallback(() => {
   if (window.scrollY >= 510){
     setColor(true)
     setMobile(mobile);
   }else {
     setColor(false)
   }
-  
-}
+}, [mobile]);
+
+// const changeColor = () => {
+//   if (window.scrollY >= 510){
+//     setColor(true)
+//     setMobile(mobile);
+//   }else {
+//     setColor(false)
+//   }
+// }
 
 
   useEffect(() => {
@@ -48,7 +56,7 @@ const changeColor = () => {
             <Image 
             src={logo}
             alt="logo"
-            width={150}
+            width={180}
             className={styles.logo_img}
             />
           </Link>
@@ -59,7 +67,7 @@ const changeColor = () => {
             <span
             onClick={toggleMenu}
             >
-              <Image src={exit} alt="menu" width={25}/>
+              <Image className={styles.exx} src={exit} alt="menu" width={30}/>
             </span>
           
             <li  onClick={() => {handleNavbar("/about") ;}}>

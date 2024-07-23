@@ -52,7 +52,7 @@ export default function Contacts() {
                   {/* <button className={styles.contact_btn} type="submit">Contact Us</button> */}
                   {/* <input type="button" value="" className={styles.contact_btn}  /> */}
                   <button onClick={handleClick} type="submit" className={isLoading? styles.load_btn : styles.contact_btn}>
-                    {isLoading? 'Loading...' : 'Log In'}
+                    {isLoading? 'Loading...' : 'Send a message'}
                   </button>
                 </div>
               </form>

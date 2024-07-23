@@ -5,6 +5,7 @@ import Image from 'next/image'
 import second from "../../../../public/assets/images/second.svg"
 import NavBar from '../navbar'
 import Contacts from '../resuseable'
+import Link from 'next/link'
 
 export default function Team() {
   return (
@@ -24,9 +25,9 @@ export default function Team() {
           </div>
           <div className={styles.team_two}>
             <div className={styles.logo_img}>
-                {founding.map((item, i) => (
+                {founding.map((item, index) => (
                   <div
-                    key={i}
+                    key={index}
                     className={styles.logo_icon}
                   >
                     <Image 
@@ -35,7 +36,18 @@ export default function Team() {
                     width={100}
                     className={styles.logo}
                     />
-                    <b>{item.name}</b>
+                    
+                      {/* <b>{item.name}</b> */}
+                      {item.href.startsWith('http') ? (
+                      <a href={item.href} target="_blank" rel="noopener noreferrer">
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link href={item.href}>
+                        <a >{item.name}</a>
+                      </Link>
+                    )}
+                    
                     <p>{item.text}</p>
                   </div>
                 ))}
@@ -53,8 +65,8 @@ export default function Team() {
           </div>
 
           <section className={styles.board_team}>
-          <b>TEAM MARITEST</b>
-          <h2>Advisory Board</h2>
+          {/* <b>MARITEST</b> */}
+          <h2>Advisors </h2>
           <div className={styles.logo_img}>
               {board.map((item, i) => (
                 <div
@@ -67,7 +79,15 @@ export default function Team() {
                   width={100}
                   className={styles.logo}
                   />
-                  <b>{item.name}</b>
+                    {item.href.startsWith('http') ? (
+                      <a href={item.href} target="_blank" rel="noopener noreferrer">
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link href={item.href}>
+                        <a >{item.name}</a>
+                      </Link>
+                    )}
                   <p>{item.text}</p>
                 </div>
               ))}
