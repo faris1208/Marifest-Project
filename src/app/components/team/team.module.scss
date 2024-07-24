@@ -142,7 +142,7 @@
     }
 
     .logo_img{
-        width: 46%;
+        width: 50%;
         // height: unset !important;
         // display: grid;
         // grid-template-columns: 1fr 1fr 1fr;
@@ -150,10 +150,10 @@
        
         margin-top: 40px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
+        // align-items: center;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
         // border: 2px solid green;
         padding: 0px;
 
@@ -200,16 +200,14 @@
     //         margin-top: 20px;
     // }
 
-        .logo_icon:nth-last-child(2) {
-                margin-top: 20px;
-                margin-left: 110px;
-                border: 2px solid red;
-        }
+        // .logo_icon:nth-last-child(2) {
+        //         margin-top: 20px;
+        //         margin-left: 130px;
+        //         border: 2px solid red;
+        // }
 
         .logo_icon:last-child {
-            margin-top: 35px;
-            margin-right: 110px;
-            border: 2px solid red;
+            flex-basis: 32%;
         }
     }
 
