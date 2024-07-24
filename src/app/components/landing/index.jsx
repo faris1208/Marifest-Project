@@ -3,7 +3,7 @@ import styles from "../landing/landing.module.scss"
 import Navbar from '../navbar'
 import Image from 'next/image'
 import bricks from "../../../../public/assets/images/bricks.svg"
-import boys from "../../../../public/assets/images/boys.svg"
+import boys from "../../../../public/assets/images/mobile.webp"
 import cool from "../../../../public/assets/images/Element.svg"
 import group from "../../../../public/assets/images/Our journey.webp"
 import { logo } from "../data/index"
@@ -139,7 +139,7 @@ export default function Landing() {
                 <Image 
                 src={item.icon}
                 alt='logos'
-                width={220}
+                width={180}
                 className={styles.logo}
                 />
               </div>

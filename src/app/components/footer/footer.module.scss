@@ -1,7 +1,7 @@
 @import "../../styles/index.scss";
 
 .footer_container{
-    padding: 20px 120px;
+    padding: 40px 120px;
     background-color: #132E3D;
     // max-width: 1440px;
     // margin: 0 auto;
@@ -11,7 +11,7 @@
     }
 
     @include responsive("mobile") {
-        padding: 20px 20px;
+        padding: 35px 20px ;
     }
 }
 

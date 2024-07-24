@@ -1060,8 +1060,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    padding: 20px 0px;
+    gap: 40px;
+    padding: 20px 20px;
 
     @include responsive("tablet") {
         gap: 20px;
