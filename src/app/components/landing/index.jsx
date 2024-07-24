@@ -3,7 +3,7 @@ import styles from "../landing/landing.module.scss"
 import Navbar from '../navbar'
 import Image from 'next/image'
 import bricks from "../../../../public/assets/images/bricks.svg"
-import boys from "../../../../public/assets/images/mobile.webp"
+import boys from "../../../../public/assets/images/boys.svg"
 import cool from "../../../../public/assets/images/Element.svg"
 import group from "../../../../public/assets/images/Our journey.webp"
 import { logo } from "../data/index"
