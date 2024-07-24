@@ -59,7 +59,7 @@ export const founding = [
     {
         icon: hakeem,
         href: 'https://www.linkedin.com/in/kakooza-h-202902142/',
-        name: "Dr. Hakeem Kakooza",
+        name: "Hakeem Kakooza",
         text: "Founder & Ceo",
     },
     {
@@ -77,7 +77,7 @@ export const founding = [
     {
         icon: hamza,
         href: 'https://www.linkedin.com/in/amuza-dhabuliwo-557028216/',
-        name: "Hamza Dhabuliwo",
+        name: "Dr. Hamza Dhabuliwo",
         text: "Chief Medical Officer",
     },
     {
