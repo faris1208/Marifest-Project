@@ -57,7 +57,7 @@ const changeColor = useCallback(() => {
             <Image 
             src={logo}
             alt="logo"
-            width={180}
+            width={160}
             className={styles.logo_img}
             />
           </Link>
