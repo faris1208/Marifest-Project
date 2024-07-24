@@ -19,7 +19,8 @@ export default function About() {
             <div className={styles.marifest_heading}>
               <b>ABOUT MARITEST</b>
               <h2>Our Mission</h2>
-              <p>At MariTest, our mission is to revolutionize malaria diagnosis and treatment in sub-Saharan Africa. We strive to create innovative, accessible, and non-invasive diagnostic tools that save lives and bring hope to communities burdened by malaria. We are committed to eradicating this devastating disease through advanced technology, real-time monitoring, and community-driven solutions.</p>
+              <p>At MariTest, our mission is to revolutionize malaria diagnosis and treatment in sub-Saharan Africa. We strive to create innovative, accessible, and non-invasive diagnostic tools that save lives and bring hope to communities burdened by malaria. </p>
+              <p>We are committed to eradicating this devastating disease through advanced technology, real-time monitoring, and community-driven solutions.</p>
             </div>
             <div className={styles.marifest_image}>
               <Image 
