@@ -53,6 +53,8 @@ export default function Landing() {
         </div>
       </div>
 
+      
+
       <section className={styles.heading}>
         <div className={styles.heading_first}>
           <div className={styles.heading_first_text}>
